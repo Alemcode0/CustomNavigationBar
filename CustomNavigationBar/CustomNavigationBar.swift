@@ -44,13 +44,14 @@ struct BottomNavBar: View {
                             Image(systemName: selectedTab == tab ? "\(tab.rawValue).circle.fill" : "\(tab.rawValue)")
                                 .symbolVariant(.fill)
                                 .font(.system(size: 24, weight: .bold))
-                                .scaleEffect(selectedTab == tab && animateIcon ? 1.5 : 1.0)
+                                .scaleEffect(selectedTab == tab && animateIcon ? 1.4 : 1.0)
                                 .foregroundColor(selectedTab == tab ? .yellow : .gray)
                                 .animation(.easeOut(duration: 0.2), value: animateIcon)
+                                .shadow(color: .black.opacity(0.4), radius: 1, x: 0, y: 1)
                             
                             Text(tab.label)
                                 .font(.caption2)
-                                .foregroundColor(selectedTab == tab ? .yellow : .gray)
+                                .foregroundColor(selectedTab == tab ? .black : .gray)
                                 .opacity(0.8)
                             
                         }
@@ -63,7 +64,7 @@ struct BottomNavBar: View {
             .padding(.horizontal, 20)
             .background(.ultraThinMaterial)
             .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
-            .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: -5)
+            .shadow(color: .black.opacity(0.4), radius: 10, x: 0, y: -5)
             .padding(.horizontal)
             .padding(.bottom, 10)
         }

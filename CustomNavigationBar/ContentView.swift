@@ -12,6 +12,8 @@ struct ContentView: View {
             Image("flowerBG")
                 .resizable()
                 .ignoresSafeArea()
+            LinearGradient(colors: [.green, .blue], startPoint: .top, endPoint: .bottom).opacity(0.6)
+                .ignoresSafeArea()
             
             BottomNavBar()
         }
