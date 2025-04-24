@@ -2,6 +2,7 @@
 
 A polished and fully animated Bottom Navigation Bar component built in SwiftUI as part of my current app project.
 Designed to be clean, responsive, and easy to extend for any mobile app interface.
+![image alt](https://github.com/Alemcode0/CustomNavigationBar/blob/9ec27a05a2a667d4e701a9e74b75a551438149e3/SwiftUI%20-%20BottomNavBar.png)
 
 ## 💡 Features
 ### 🟡 Animated Selection 
